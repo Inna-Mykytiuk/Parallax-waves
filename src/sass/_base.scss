@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  animation-play-state: running !important;
 }
 
 body {

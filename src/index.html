@@ -14,6 +14,8 @@
   </head>
   <body>
     <section>
+      <!-- <h1 class="article__title">Animate Paralax Waves</h1> -->
+      <include src="./partials/text.html"></include>
       <div class="wave" id="wave1" style="--i: 1"></div>
       <div class="wave" id="wave2" style="--i: 2"></div>
       <div class="wave" id="wave3" style="--i: 3"></div>
@@ -21,7 +23,7 @@
     </section>
     <div class="container">
       <div class="article">
-        <h1 class="article__title">Animate Paralax Waves</h1>
+        <!-- <h1 class="article__title">Animate Paralax Waves</h1> -->
         <p class="article__text">
           Animating graphics is a great way to bring visual interest and
           engagement to your digital content. One popular technique for creating
@@ -82,6 +84,9 @@
     </div>
     <!-- ❗️❗️❗️ Add partials like so for every page -->
     <!-- <include src="./partials/example.html"></include> -->
+    <script>
+      window.setTimeout = null;
+    </script>
     <script type="module" src="./index.js"></script>
   </body>
 </html>

@@ -64,10 +64,16 @@ section {
 }
 
 .article__title {
-  font-size: 3em;
+  padding-top: 300px;
+  font-size: 10em;
   font-weight: 900;
+
   text-align: center;
-  color: #000;
+  color: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(48, 102, 147, 0.6166841736694677) 63%
+  );
 }
 
 .article__text {
