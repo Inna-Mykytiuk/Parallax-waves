@@ -2,24 +2,15 @@
 @import url('//fonts.googleapis.com/css?family=Roboto:700&text=css');
 @import url('//fonts.googleapis.com/css?family=Kaushan+Script&text=!');
 
-// body {
-//   min-height: 450px;
-//   height: 100vh;
-//   margin: 0;
-//   background: radial-gradient(circle, #0077ea, #1f4f96, #1b2949, #000);
-// }
-
 .stage {
   height: 300px;
-  width: 500px;
-  margin: auto;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  max-width: 1200px;
   perspective: 9999px;
   transform-style: preserve-3d;
+  margin: 0 auto;
+  position: absolute;
+  inset: 0;
+  top: 200px;
 }
 
 .layer {
@@ -36,12 +27,12 @@
   font: 150px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto',
     'Trebuchet MS', Helvetica, sans-serif;
   content: 'Animate Paralax\a    Waves!';
-  white-space: pre;
+  // white-space: pre;
   text-align: center;
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 50px;
+  // top: 50px;
   color: whitesmoke;
   letter-spacing: -2px;
   text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);
