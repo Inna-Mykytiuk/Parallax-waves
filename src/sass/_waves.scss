@@ -12,10 +12,57 @@ section {
   left: 0;
   width: 100%;
   height: 100px;
+  background-image: url(../images/wave.png);
+  background-size: 1000px 100px;
+  animation: animate 4s ease-in-out infinite;
+  animation-delay: calc(var(--i) * 0.25s);
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.wave#wave1 {
+  z-index: 1000;
+  opacity: 1;
+  background-position-x: 400px;
+}
+.wave#wave2 {
+  z-index: 999;
+  opacity: 0.5;
+  background-position-x: 300px;
+}
+.wave#wave3 {
+  z-index: 998;
+  opacity: 0.2;
+  background-position-x: 200px;
+}
+.wave#wave4 {
+  z-index: 999;
+  opacity: 0.7;
+  background-position-x: 100px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .article__title {
   font-size: 3em;
+  font-weight: 900;
+  text-align: center;
   color: #000;
 }
 
